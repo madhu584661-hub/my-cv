@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My CV QR</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;">
+
+  <div id="qrcode"></div>
+
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: "https://YOUR-USERNAME.github.io/my-cv/",
+      width: 250,
+      height: 250
+    });
+  </script>
+
+</body>
+</html>
